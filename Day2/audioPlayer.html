@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audio Demo</title>
+</head>
+<body>
+<!--     <audio 
+        id="myPlayer"    
+        autoplay="autoplay"
+        controls="controls"
+        preload="auto"
+        loop="loop"
+    > -->
+    
+    <audio 
+    id="myPlayer"    
+    controls="controls"
+    autoplay="autoplay"
+>
+
+    <source src="./assets/Hanuman-Chalisa.mp3" type="audio/mp3" />
+
+        Your browser does not have this feature
+
+</audio>
+
+<button onclick="play()" >Play</button>
+<button onclick="stop()">Stop</button>
+<button onclick="pause()">Pause</button>
+<button onclick="inc()">Increase Volume</button>
+<button onclick="getVolume()" type="button">What is the volume?</button>
+<button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
+<button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
+
+<script>
+    function pause(){
+        document.getElementById('myPlayer').pause();
+    }
+    function play(){
+        document.getElementById('myPlayer').play();
+    }
+    function stop(){
+        document.getElementById('myPlayer').pause();
+        document.getElementById('myPlayer').currentTime = 0;
+    }
+    var x = document.getElementById("myAudio");
+
+function getVolume() { 
+  alert(x.volume);
+} 
+
+function setHalfVolume() { 
+  x.volume = 0.2;
+}
+   
+function setFullVolume() { 
+  x.volume = 1.0;
+} 
+    
+</script>
+</body>
+</html>
