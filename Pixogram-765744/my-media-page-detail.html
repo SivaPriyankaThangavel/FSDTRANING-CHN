@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>My Media Page-detail</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Siva Priyanka">
+    <link rel="stylesheet" href="./css/my-media-page-detail.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/images-type-restriction.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="single-media.json"></script>
+    <script src="multiple-media.json"></script>
+    <script>
+        (function ($) {
+            $.fn.checkFileType = function (options) {
+                var defaults = {
+                    allowedExtensions: [],
+                    success: function () { },
+                    error: function () { }
+                };
+                options = $.extend(defaults, options);
+
+                return this.each(function () {
+
+                    $(this).on('change', function () {
+                        var value = $(this).val(),
+                            file = value.toLowerCase(),
+                            extension = file.substring(file.lastIndexOf('.') + 1);
+
+                        if ($.inArray(extension, options.allowedExtensions) == -1) {
+                            options.error();
+                            $(this).focus();
+                        } else {
+                            options.success();
+
+                        }
+
+                    });
+
+                });
+            };
+
+        })(jQuery);
+
+        $(function () {
+            $('#image').checkFileType({
+                allowedExtensions: ['jpg', 'jpeg', 'gif', 'png'],
+                success: function () {
+                    alert('Success');
+                },
+                error: function () {
+                    alert('Error');
+                }
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <img src="images/logo.png" width="70px" height="70px">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="upload-media.html">Upload Media</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="my-media-page.html">My Media</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="followers-following-page.html">Followers/Following</a>
+            </li>
+
+            <div class="topnav-right">
+                <a href="account-page.html">Account</a>
+
+            </div>
+
+
+        </ul>
+
+
+
+        <section id="bdy">
+
+            <section class="s1">
+                <div id="pro">
+                    <img src="images/avatar.png" width="100px" height="100px">
+
+                </div>
+                <div id="wel">
+                    <p>Welcome TO Web Portal</p>
+                </div>
+            </section>
+			<p class="solid">Media Detail</p>
+			
+            <section class="s2">
+                <div id="acc">
+				<p><span class="glyphicon glyphicon-user"></span>User Profile</p>   </span>
+                     <img src="images/user.jpg" width="150px" height="200px">
+					<span class="glyphicon glyphicon-heart" style="float:right;"></span>
+					<span class="glyphicon glyphicon-heart" style="float:right;"></span>
+					</div>
+					<div class="container">
+                       <table><tr>
+<td><button>Sepia</button></td>
+<td><button>Grey</button></td>
+<td><button>Brightness</button></td>
+<td><button>Contrast</button></td>
+</tr>
+                                  
+
+             </table><br>
+			<textarea rows="3" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea> 
+			
+			<textarea rows="1" cols="50">
+
+</textarea> <br>	
+<span class="glyphicon glyphicon-heart" ></span>
+<span class="glyphicon glyphicon-comment" ></span>	
+<span class="glyphicon glyphicon-comment" ></span>	
+			<textarea rows="3" cols="50">
+
+</textarea> <span id="t" style="float:right"><table>
+  <tr>
+  <td>Reply</td>
+   
+    </tr>
+     <tr>
+  <td>Like</td>
+   
+    </tr>
+     <tr>
+  <td>Dislike</td>
+   
+    </tr>
+      <tr>
+  <td>delete</td>
+   
+    </tr>
+    
+</table></span>
+			<textarea rows="3" cols="50">
+
+</textarea> <span id="t" style="float:right"><table>
+  <tr>
+  <td>Reply</td>
+   
+    </tr>
+     <tr>
+  <td>Like</td>
+   
+    </tr>
+     <tr>
+  <td>Dislike</td>
+   
+    </tr>
+      <tr>
+  <td>delete</td>
+   
+    </tr>
+    
+</table></span>
+			<textarea rows="3" cols="50">
+
+</textarea> 
+<span id="t" style="float:right"><table>
+  <tr>
+  <td>Reply</td>
+   
+    </tr>
+     <tr>
+  <td>Like</td>
+   
+    </tr>
+     <tr>
+  <td>Dislike</td>
+   
+    </tr>
+      <tr>
+  <td>delete</td>
+   
+    </tr>
+    
+</table></span>
+			<textarea rows="3" cols="50">
+
+</textarea> 
+<span id="t" style="float:right"><table>
+  <tr>
+  <td>Reply</td>
+   
+    </tr>
+     <tr>
+  <td>Like</td>
+   
+    </tr>
+     <tr>
+  <td>Dislike</td>
+   
+    </tr>
+      <tr>
+  <td>delete</td>
+   
+    </tr>
+    
+</table></span>
+</div>
+
+            </section>
+
+
+        </section>
+
+        <footer>
+            <p id="ftr">Copyright &copy 2019</p>
+        </footer>
+
+</body>
+
+</html>

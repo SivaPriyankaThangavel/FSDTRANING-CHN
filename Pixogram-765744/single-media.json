@@ -1,0 +1,37 @@
+1.	{
+    2.	"id": 1,
+    3.	"title": "Full Stack Freelancer",
+    4.	"type": "video",
+    5.	"videoposter": "poster.jpeg",
+    6.	"description": "It is great to be a full stack developer!",
+    7.	"tags": [
+    8.	{
+    9.	"id": 1,
+    10.	"tag": "fsd"
+    11.	},
+    12.	{
+    13.	"id": 2,
+    14.	"tag": "freelancer"
+    15.	},
+    16.	{
+    17.	"id": 3,
+    18.	"tag": "full stack"
+    19.	},
+    20.	{
+    21.	"id": 4,
+    22.	"tag": "full stack cognizant"
+    23.	}
+    24.	],
+    25.	"effect": "greyscale",
+    26.	"filename": "freelancer_poster.jpeg",
+    27.	"filetype": "image/jpeg",
+    28.	"filesize": "541144",
+    29.	"uploaddate": "31-08-2018",
+    30.	"uploadtime": "1331",
+    31.	"defaultprofile": 0,
+    32.	"likes": 0,
+    33.	"unlike": 0,
+    34.	"shares": 0,
+    35.	"numberofcomments": 0
+    36.	}
+    

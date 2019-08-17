@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Multiple-Media-Upload</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Siva Priyanka">
+    <link rel="stylesheet" href="./css/multiple-media.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/images-type-restriction.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="single-media.json"></script>
+    <script src="multiple-media.json"></script>
+    <script>
+        (function ($) {
+            $.fn.checkFileType = function (options) {
+                var defaults = {
+                    allowedExtensions: [],
+                    success: function () { },
+                    error: function () { }
+                };
+                options = $.extend(defaults, options);
+
+                return this.each(function () {
+
+                    $(this).on('change', function () {
+                        var value = $(this).val(),
+                            file = value.toLowerCase(),
+                            extension = file.substring(file.lastIndexOf('.') + 1);
+
+                        if ($.inArray(extension, options.allowedExtensions) == -1) {
+                            options.error();
+                            $(this).focus();
+                        } else {
+                            options.success();
+
+                        }
+
+                    });
+
+                });
+            };
+
+        })(jQuery);
+
+        $(function () {
+            $('#image').checkFileType({
+                allowedExtensions: ['jpg', 'jpeg', 'gif', 'png'],
+                success: function () {
+                    alert('Success');
+                },
+                error: function () {
+                    alert('Error');
+                }
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <img src="images/logo.png" width="70px" height="70px">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="upload-media.html">Upload Media</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="my-media-page.html">My Media</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="followers-following-page.html">Followers/Following</a>
+            </li>
+
+            <div class="topnav-right">
+                <a href="account-page.html">Account</a>
+
+            </div>
+
+
+        </ul>
+
+
+
+        <section id="bdy">
+
+            <section class="s1">
+                <div id="pro">
+                    <img src="images/avatar.png" width="100px" height="100px">
+
+                </div>
+                <div id="wel">
+                    <p>Welcome Use,Lin</p>
+                </div>
+            </section>
+            <section class="s2">
+                <div id="acc">
+                    <p><a href="upload-media.html">Upload Media</a></p>
+                    <p><a href="upload-media.html">Single-Media</a></p>
+                    <p><a href="mutliple-media.html">Mutliple-Media</a></</p> </div>
+					<div class="container">
+                        <p style="border:2px solid black">New Media Page</p>
+                        <br>
+                        				 
+						
+                            
+                        </table><br><div id="t2">
+						<table cellspacing="20">
+						<table  cellspacing="55" >
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                <tr>
+                                    <td>Browse</td>
+                                    <td><input type="file" name="image" id="image" value="browse" /></td>
+                                    <td><input type="submit" value="Upload">
+                                    <td></td>
+								   
+                            </tr>
+							</form>
+                            
+                            
+                            <tr>
+                                <td>Title</td>
+                                <td><input type="text" /></td>
+<td rowspan="4"> <p class="dotted">Drag and Drop files here</p></td>  
+
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td><input type="textarea" /></td>
+                               
+                            </tr>
+                            <tr>
+                                <td>Tags</td>
+                                <td><input type="text" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Effects</td>
+                                <td><button>Sepia</button>
+                                    <button>Grey</button>
+                                    <button>Brightness</button>
+                                    <button>Contrast</button>
+                                    <td></td>
+                                </td>
+						</tr>
+					
+			                		
+						<tr>
+                                <td>Title</td>
+                                <td><input type="text" /></td>
+<td></td>
+                            </tr>
+							<tr>
+                                <td>Description</td>
+                                <td><input type="textarea" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Tags</td>
+                                <td><input type="text" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Effects</td>
+                                <td><button>Sepia</button>
+                                    <button>Grey</button>
+                                    <button>Brightness</button>
+                                    <button>Contrast</button>
+                                    <td></td>
+                                </td>
+						</tr>
+												<tr>
+                                <td>Title</td>
+                                <td><input type="text" /></td>
+<td></td>
+                            </tr>
+							<tr>
+                                <td>Description</td>
+                                <td><input type="textarea" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Tags</td>
+                                <td><input type="text" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Effects</td>
+                                <td><button>Sepia</button>
+                                    <button>Grey</button>
+                                    <button>Brightness</button>
+                                    <button>Contrast</button>
+                                    <td></td>
+                                </td>
+						</tr>
+						</table>
+
+
+							
+
+						
+						
+                            
+                       
+
+                </div>
+
+                
+
+               
+			   
+			   
+
+
+
+
+            </section>
+
+
+        </section>
+
+        <footer>
+            <p id="ftr">Copyright &copy 2019</p>
+        </footer>
+
+</body>
+
+</html>

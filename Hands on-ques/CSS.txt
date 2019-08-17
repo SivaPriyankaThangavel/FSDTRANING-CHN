@@ -1,0 +1,1729 @@
+External Style sheet
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+mystyle.css
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+
+Internal Style sheet
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: linen;
+}
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+Inline Style sheet
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1
+{
+background-color:#6495ed;
+}
+p
+{
+background-color:#e0ffff;
+}
+div
+{
+background-color:#b0c4de;
+}
+</style>
+</head>
+
+<body>
+
+<h1>CSS background-color example!</h1>
+<div>
+This is a text inside a div element.
+<p>This paragraph has its own background color.</p>
+We are still in the div element.
+</div>
+
+</body>
+</html>
+
+
+
+ID Selector
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {color:red;}
+h1 {color:#00ff00;}
+p#ex {color:rgb(0,0,255);}
+</style>
+</head>
+
+<body>
+<h1>This is heading 1</h1>
+<p>This is an ordinary paragraph. Notice that this text is red. The default text-color for a page is defined in the body selector.</p>
+<p id="ex">This is a paragraph with class="ex". This text is blue.</p>
+</body>
+</html>
+
+
+
+Class Selector
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align:center;}
+p.date {text-align:right;}
+p.main {text-align:justify;}
+</style>
+</head>
+
+<body>
+<h1>CSS text-align Example</h1>
+<p class="date">May, 2009</p>
+<p class="main">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 
+'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+<p><b>Note:</b> Resize the browser window to see how the value "justify" works.</p>
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-decoration:overline;}
+h2 {text-decoration:line-through;}
+h3 {text-decoration:underline;}
+h4 {text-decoration:blink;}
+</style>
+</head>
+
+<body>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<p><b>Note:</b> The "blink" value is not supported in IE, Chrome, or Safari.</p>
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {text-indent:50px;}
+</style>
+</head>
+<body>
+
+<p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+</body>
+</html>
+
+
+
+
+
+Group Selector
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,th,td
+{
+border:1px solid black;
+}
+</style>
+</head>
+
+<body>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>Peter</td>
+<td>Griffin</td>
+</tr>
+<tr>
+<td>Lois</td>
+<td>Griffin</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th
+{
+border:1px solid green;
+}
+th
+{
+background-color:green;
+color:white;
+}
+</style>
+</head>
+
+<body>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Savings</th>
+</tr>
+<tr>
+<td>Peter</td>
+<td>Griffin</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>Lois</td>
+<td>Griffin</td>
+<td>$150</td>
+</tr>
+<tr>
+<td>Joe</td>
+<td>Swanson</td>
+<td>$300</td>
+</tr>
+<tr>
+<td>Cleveland</td>
+<td>Brown</td>
+<td>$250</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.none {border-style:none;}
+p.dotted {border-style:dotted;}
+p.dashed {border-style:dashed;}
+p.solid {border-style:solid;}
+p.double {border-style:double;}
+p.groove {border-style:groove;}
+p.ridge {border-style:ridge;}
+p.inset {border-style:inset;}
+p.outset {border-style:outset;}
+p.hidden {border-style:hidden;}
+</style>
+</head>
+
+<body>
+<p class="none">No border.</p>
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="hidden">A hidden border.</p>
+</body>
+
+</html>
+
+
+Universal Selectors
+
+CSS code :* {
+color: blue; 
+background: silver; 
+} 
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Simple Example of CSS universal selectors </title>
+<link rel='stylesheet' href='sample.css' type='text/css'>
+</head>
+<body>
+<h1>Example of CSS.</h2> 
+<h2>Example of grouping of CSS universal selectors.</h2> 
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna elit. Integer malesuada tempus enim nec rhoncus.</p>
+</body>
+</html> 
+
+
+CSS DESCENDANT SELECTOR  - selectors to match an element that is the descendant of another element in the document tree
+
+CSS code :div em {
+color: red; /* sets color to red */ 
+}HTML code :<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Simple Example of CSS descendant selectors</title>
+<link rel='stylesheet' href='Simple-Example-of-CSS-descendant-selector.css' type='text/css'>
+</head>
+<body>
+<h1>Example of <em>CSS</em> descendant selector.</h1>
+<div>
+<p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit. Donec a <em>urna</em> elit.</p>
+<p>Integer malesuada <em>tempus</em> enim nec rhoncus. Aenean tempus adipiscing porttitor.</p>
+</div>
+</body>
+</html> 
+
+
+
+
+CSS code :div ul em {
+color: red; /* sets color to red */ 
+}HTML code :<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Advanced Example of CSS descendant selectors</title>
+<link rel='stylesheet' href='Advanced-Example-of-CSS-descendant-selector.css' type='text/css'>
+</head>
+<body>
+<div>
+<ul>
+<li><em>HTML</em> Tutorial</li> 
+<li><em>CSS</em> Tutorial</li> 
+<li><em>Javascript</em> Tutorial</li> 
+</ul>
+</div>
+</body>
+</html> 
+
+
+
+
+CSS CHILD SELECTOR  matches when an element is the child of some element.
+
+CSS code :p> em {
+color: red; 
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Simple Example of CSS child selectors</title>
+<link rel='stylesheet' href='sample.css' type='text/css'>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit. Donec a <em>urna</em> elit.</p>
+</div>
+</body>
+</html> 
+
+
+
+
+CSS code :div > p > span > em {
+color: red; 
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Advanced Example of CSS child selectors</title>
+<link rel='stylesheet' href='sample.css' type='text/css'>
+</head>
+<body>
+<div>
+<p><span>Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit.</span> <span>Donec a <em>urna</em> elit.</span></p>
+</div>
+</body>
+</html> 
+
+
+
+
+CSS ADJACENT SIBLING SELECTOR - The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+CSS code :h1 + h2 {
+color: red; 
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Simple Example of CSS adjacent sibling selectors</title>
+<link rel='stylesheet' href='sample.css' type='text/css'>
+</head>
+<body>
+<h1>w3resource CSS examples</h1> 
+<h2>w3resource CSS CSS adjacent selectors examples</h2> 
+</div>
+</body>
+</html> 
+
+
+
+
+
+CSS code :.main {
+background-color: aliceblue;  
+} 
+p.main + h4 {
+color: red; /* sets color to red */ 
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Advanced Example of CSS adjacent sibling selectors</title>
+<link rel='stylesheet' href='sample.css' type='text/css'>
+</head>
+<body>
+<div>
+<p class="main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a urna elit.</p>
+<h4>w3resource CSS examples.</h4> 
+</div>
+</body>
+</html> 
+
+
+PSEUDOCOLUMNS
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+</style>
+</head>
+
+<body>
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS 
+definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order 
+to be effective.</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {text-decoration:none;}    /* unvisited link */
+a:visited {text-decoration:none;} /* visited link */
+a:hover {text-decoration:underline;}   /* mouse over link */
+a:active {text-decoration:underline;}  /* selected link */
+</style>
+</head>
+
+<body>
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS 
+definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order 
+to be effective.</p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#ffcc00;}
+
+a.two:link {color:#ff0000;}
+a.two:visited {color:#0000ff;}
+a.two:hover {font-size:150%;}
+
+a.three:link {color:#ff0000;}
+a.three:visited {color:#0000ff;}
+a.three:hover {background:#66ff66;}
+
+a.four:link {color:#ff0000;}
+a.four:visited {color:#0000ff;}
+a.four:hover {font-family:monospace;}
+
+a.five:link {color:#ff0000;text-decoration:none;}
+a.five:visited {color:#0000ff;text-decoration:none;}
+a.five:hover {text-decoration:underline;}
+</style>
+</head>
+
+<body>
+<p>Mouse over the links to see them change layout.</p>
+
+<p><b><a class="one" href="default.asp" target="_blank">This link changes color</a></b></p>
+<p><b><a class="two" href="default.asp" target="_blank">This link changes font-size</a></b></p>
+<p><b><a class="three" href="default.asp" target="_blank">This link changes background-color</a></b></p>
+<p><b><a class="four" href="default.asp" target="_blank">This link changes font-family</a></b></p>
+<p><b><a class="five" href="default.asp" target="_blank">This link changes text-decoration</a></b></p>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:focus
+{
+background-color:yellow;
+}
+</style>
+</head>
+
+<body>
+<form action="form_action.asp" method="get">
+First name: <input type="text" name="fname" /><br>
+Last name: <input type="text" name="lname" /><br>
+<input type="submit" value="Submit" />
+</form>
+
+<p><b>Note:</b> IE8 supports the :focus pseudo-class only if a !DOCTYPE is specified.</p>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child
+{
+color:blue;
+} 
+</style>
+</head>
+
+<body>
+<p>This is some text.</p>
+<p>This is some text.</p>
+<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p > i:first-child
+{
+color:blue;
+} 
+</style>
+</head>
+
+<body>
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-child i
+{
+color:blue;
+} 
+</style>
+</head>
+
+<body>
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-letter 
+{
+color:#ff0000;
+font-size:xx-large;
+}
+</style>
+</head>
+
+<body>
+<p>You can use the :first-letter pseudo-element to add a special effect to the first character of a text!</p>
+</body>
+</html>
+
+0
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-line 
+{
+color:#ff0000;
+font-variant:small-caps;
+}
+</style>
+</head>
+
+<body>
+<p>You can use the :first-line pseudo-element to add a special effect to the first line of a text.</p>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p:first-letter
+{
+color:#ff0000;
+font-size:xx-large;
+}
+p:first-line 
+{
+color:#0000ff;
+font-variant:small-caps;
+}
+</style>
+</head>
+
+<body>
+<p>You can combine the :first-letter and :first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1:before {content:url(smiley.gif);}
+</style>
+</head>
+
+<body>
+<h1>This is a heading</h1>
+<p>The :before pseudo-element inserts content before an element.</p>
+<h1>This is a heading</h1>
+<p><b>Note:</b> IE8 supports the content property 
+only if a !DOCTYPE is specified.</p>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1:after {content:url(smiley.gif);}
+</style>
+</head>
+
+<body>
+<h1>This is a heading</h1>
+<p>The :after pseudo-element inserts content after an element.</p>
+<h1>This is a heading</h1>
+<p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+</body>
+</html>
+
+
+
+
+
+ATTRIBUTE SELECTORS
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[title]
+{
+color:blue;
+}
+</style>
+</head>
+
+<body>
+<h2>Will apply to:</h2>
+<h1 title="Hello world">Hello world</h1>
+<a title="W3Schools" href="http://w3schools.com">W3Schools</a>
+<hr>
+<h2>Will not apply to:</h2>
+<p>Hello!</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[title=W3Schools]
+{
+border:5px solid green;
+}
+</style>
+</head>
+
+<body>
+<h2>Will apply to:</h2>
+<img title="W3Schools" src="w3schools_logo.gif" width="270" height="50" />
+<br>
+<a title="W3Schools" href="http://w3schools.com">W3Schools</a>
+<hr>
+<h2>Will not apply to:</h2>
+<p title="greeting">Hi!</p>
+<a class="W3Schools" href="http://w3schools.com">W3Schools</a>
+</body>
+</html>
+
+
+
+
+
+
+
+used to select elements with an attribute value containing a specified word.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[title~=hello]
+{
+color:blue;
+} 
+</style>
+</head>
+
+<body>
+<h2>Will apply to:</h2>
+<h1 title="hello world">Hello world</h1>
+<p title="student hello">Hello CSS students!</p>
+<hr>
+<h2>Will not apply to:</h2>
+<p title="student">Hi CSS students!</p>
+</body>
+</html>
+
+
+
+
+
+used to select elements with the specified attribute starting with the specified value.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[lang|=en]
+{
+color:blue;
+}
+</style>
+</head>
+
+<body>
+<h2>Will apply to:</h2>
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<p lang="en-gb">Ello!</p>
+<hr>
+<h2>Will not apply to:</h2>
+<p lang="us">Hi!</p>
+<p lang="no">Hei!</p>
+</body>
+</html>
+
+
+used to select elements whose attribute value begins with a specified value.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[class^="top"] {
+    background: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+<p><b>Note:</b> For [<i>attribute</i>^=<i>value</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+
+</body>
+</html>
+
+
+used to select elements whose attribute value ends with a specified value.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+[class$="test"] {
+    background: yellow;
+}
+</style>
+</head>
+<body>
+
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-test">The third div element.</div>
+<p class="mytest">This is some text in a paragraph.</p>
+
+</body>
+</html>
+
+
+used to select elements whose attribute value contains a specified value.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+[class*="te"] {
+    background: yellow;
+}
+</style>
+</head>
+<body>
+
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-test">The third div element.</div>
+<p class="mytest">This is some text in a paragraph.</p>
+
+</body>
+</html>
+
+
+CSS FLOAT
+
+The float property is used for positioning and layout on web pages.
+
+The float property can have one of the following values:
+
+left - The element floats to the left of its container
+right- The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    float: right;
+}
+</style>
+</head>
+<body>
+
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+<p><img src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+</body>
+</html>
+
+
+CSS Clear 
+
+The clear property specifies what elements can float beside the cleared element and on which side.
+
+The clear property can have one of the following values:
+
+none - Allows floating elements on both sides. This is default
+left - No floating elements allowed on the left side
+right- No floating elements allowed on the right side
+both - No floating elements allowed on either the left or the right side
+inherit - The element inherits the clear value of its parent
+The most common way to use the clear property is after you have used a float property on an element.
+
+When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.div1 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div2 {
+    border: 1px solid red;
+}
+
+.div3 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div4 {
+    border: 1px solid red;
+    clear: left;
+}
+</style>
+</head>
+<body>
+
+<h2>Without clear</h2>
+<div class="div1">div1</div>
+<div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+<br><br>
+
+<h2>With clear</h2>
+<div class="div3">div3</div>
+<div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+
+</body>
+</html>
+
+
+
+CSS Overflow
+
+The overflow property specifies whether to clip content or to add scrollbars when the content of an element is too big to fit in a specified area.
+
+The overflow property has the following values:
+
+visible - Default. The overflow is not clipped. It renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, but a scrollbar is added to see the rest of the content
+auto - If overflow is clipped, a scrollbar should be added to see the rest of the content
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#overflowTest {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+
+<div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+
+</body>
+</html>
+
+
+CSS Box Model
+
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. 
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
+}
+</style>
+</head>
+<body>
+
+<h2>Demonstrating the Box Model</h2>
+
+<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+
+<div>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+<h2>Calculate the total width:</h2>
+
+<img src="klematis4_big.jpg" width="350" height="263" alt="Klematis">
+<div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+
+</body>
+</html>
+
+
+
+
+CSS FONT
+
+In CSS, there are two types of font family names:
+
+generic family - a group of font families with a similar look (like "Serif" or "Monospace")
+font family - a specific font family (like "Times New Roman" or "Arial")
+
+Generic family   Font family          Description
+Serif              Times New Roman
+                 Georgia             Serif fonts have small lines at the ends on some characters
+Sans-serif            Arial
+                Verdana             "Sans" means without - these fonts do not have the lines at the ends of characters
+Monospace        Courier New
+                Lucida Console All monospace characters have the same width
+
+Font Family
+
+The font-family property should hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font, and so on.
+Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.
+Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
+More than one font family is specified in a comma-separated list:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS font-family</h1>
+<p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+
+</body>
+</html>
+
+
+Font Style
+The font-style property is mostly used to specify italic text.
+
+This property has three values:
+
+normal - The text is shown normally
+italic - The text is shown in italics
+oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+</style>
+</head>
+<body>
+
+<p class="normal">This is a paragraph in normal style.</p>
+<p class="italic">This is a paragraph in italic style.</p>
+<p class="oblique">This is a paragraph in oblique style.</p>
+
+</body>
+</html>
+
+
+Font Size
+The font-size property sets the size of the text.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+
+
+Font Weight
+The font-weight property specifies the weight of a font:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  font-weight: normal;
+}
+
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+</style>
+</head>
+<body>
+
+<p class="normal">This is a paragraph.</p>
+<p class="light">This is a paragraph.</p>
+<p class="thick">This is a paragraph.</p>
+<p class="thicker">This is a paragraph.</p>
+
+</body>
+</html>
+
+
+Font Variant
+The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+</style>
+</head>
+<body>
+
+<p class="normal">My name is Hege Refsnes.</p>
+<p class="small">My name is Hege Refsnes.</p>
+
+</body>
+</html>
+
+
+
+CSS Shadow Effects
+With CSS you can add shadow to text and to elements.
+
+In this chapter you will learn about the following properties:
+
+text-shadow
+box-shadow
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+<p><b>Note:</b> Internet Explorer 9 and earlier versions, do not support the text-shadow property.</p>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px 5px grey;
+}
+</style>
+</head>
+<body>
+
+<div>This is a div element with a box-shadow</div>
+
+</body>
+</html>
+
+
+CSS Rounded Corners
+
+CSS border-radius property defines the radius of an element's corners.
+
+border-radius property can have from one to four values. Here are the rules:
+
+Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner): 
+
+Three values - border-radius: 15px 50px 30px; (first value applies to top-left corner, second value applies to top-right and bottom-left corners, and third value applies to bottom-right corner):
+
+Two values - border-radius: 15px 50px; (first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners):
+
+One value - border-radius: 15px; (the value applies to all four corners, which are rounded equally:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#rcorners1 {
+  border-radius: 15px 50px 30px 5px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners2 {
+  border-radius: 15px 50px 30px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners3 {
+  border-radius: 15px 50px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+
+#rcorners4 {
+  border-radius: 15px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+</style>
+</head>
+<body>
+
+<h1>The border-radius Property</h1>
+
+<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+<p id="rcorners1"></p>
+
+<p>Three values - border-radius: 15px 50px 30px:</p>
+<p id="rcorners2"></p>
+
+<p>Two values - border-radius: 15px 50px:</p>
+<p id="rcorners3"></p>
+
+<p>One value - border-radius: 15px:</p>
+<p id="rcorners4"></p>
+
+</body>
+</html>
+
+
+
+
+CSS Multiple Column
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.newspaper {
+  
+  column-count: 3;
+  column-gap: 40px;
+  column-width: 100px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: lightblue;
+  column-rule: 1px solid lightblue;
+}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-width property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+
+</body>
+</html>
+
+
+
+
+CSS Backgrounds
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>Multiple Backgrounds</h1>
+<p>The following div element has two background images:</p>
+
+<div id="example1">
+  <h1>Lorem Ipsum Dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#example1 {
+  border: 1px solid black;
+  background:url(img_flwr.gif);
+  background-size: 100px 80px;
+  background-repeat: no-repeat;
+  padding:15px;
+}
+
+#example2 {
+  border: 1px solid black;
+  background:url(img_flwr.gif);
+  background-repeat: no-repeat;
+  padding:15px;
+}
+</style>
+</head>
+<body>
+
+<h1>The background-size Property</h1>
+
+<p>Resized background-image:</p>
+<div id="example1">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>Original size of the background-image:</p>
+<div id="example2">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  background: url(img_tree.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+  padding: 15px;
+  background-size: 50px, 130px, auto;
+}
+</style>
+</head>
+<body>
+
+<div id="example1">
+  <h1>Lorem Ipsum Dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+html { 
+  background: url(img_man.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+body { 
+  color: white; 
+}
+</style>
+</head>
+<body>
+
+<h1>Full Page Background Image</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+</body>
+</html>
+
+
+
+The CSS background-origin property specifies where the background image is positioned.
+
+The property takes three different values:
+
+border-box - the background image starts from the upper left corner of the border
+padding-box - (default) the background image starts from the upper left corner of the padding edge
+content-box - the background image starts from the upper left corner of the content
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#example1 {
+  border: 10px solid black;
+  padding: 35px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+}
+
+#example2 {
+  border: 10px solid black;
+  padding: 35px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+#example3 {
+  border: 10px solid black;
+  padding: 35px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+</style>
+</head>
+<body>
+
+<h1>The background-origin Property</h1>
+
+<p>No background-origin (padding-box is default):</p>
+<div id="example1">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>background-origin: border-box:</p>
+<div id="example2">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>background-origin: content-box:</p>
+<div id="example3">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</body>
+</html>
+
+
+
+The CSS background-clip property specifies the painting area of the background.
+
+The property takes three different values:
+
+border-box - (default) the background is painted to the outside edge of the border
+padding-box - the background is painted to the outside edge of the padding
+content-box - the background is painted within the content box
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#example1 {
+  border: 10px dotted black;
+  padding:35px;
+  background: yellow;
+}
+
+#example2 {
+  border: 10px dotted black;
+  padding:35px;
+  background: yellow;
+  background-clip: padding-box;
+}
+
+#example3 {
+  border: 10px dotted black;
+  padding:35px;
+  background: yellow;
+  background-clip: content-box;
+}
+</style>
+</head>
+<body>
+
+<h1>The background-clip Property</h1>
+
+<p>No background-clip (border-box is default):</p>
+<div id="example1">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="example2">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="example3">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+</body>
+</html>
+
+
+
+Thanks & Regards,
+T. Senthil Kumar
+Mobile: 9894088066
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

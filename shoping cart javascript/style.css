@@ -1,0 +1,88 @@
+.wrapper
+
+{
+
+width: 1000px;
+
+height: 800px;
+
+background-color: 
+beige;
+
+margin-right: 
+auto;
+
+margin-left: 
+auto;
+
+}
+
+*
+
+{
+
+margin: 0px;
+
+padding: 
+0px;
+
+}
+
+.navbar
+
+{
+
+width: inherit;
+
+height: 30px;
+
+background-color: 
+coral;
+
+}
+
+.navbar ul
+
+{
+
+list-style-type: 
+none;
+
+margin-left: 
+50px;
+
+}
+
+.navbar ul
+li
+
+{
+
+display: 
+inline-block;
+
+width: 100px;
+
+line-height: 
+30px;
+
+}
+
+.navbar ul
+li a
+
+{
+
+text-decoration: 
+none;
+
+color: white;
+
+font-weight: 
+bold;
+
+font-family: 
+Verdana, Geneva, Tahoma, 
+sans-serif;
+
+}
