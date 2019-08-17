@@ -1,0 +1,132 @@
+1)int String;//valid
+2)predefined classes and interfaces are used as identifiers
+3)identifers-any naming given to variables,methods,classes,interfaces
+4)variables-refering the memory location
+5)keywords
+-------------------
+51 reserved words
+48 keywords
+3 reserved literals
+ true
+ false
+ null
+6)datatypes
+(REM...REFER )
+size of boolean is JVM DEPENDENT
+7)literals
+-a constant value...
+5 types:::
+->integral literals
+->floating literals
+-->character literals
+-->string literals
+--->boolean literals
+-->integral literals
+----------------
+decimal:
+-----
+0-9
+ex:10,123
+int x=10;
+
+octal
+-----------
+0-7
+prefixed with 0
+ex:010,067(valid)
+078(invalid)
+
+hexadecimal
+----------------
+0-9
+a..f
+prefixed with 0x or 0X
+ex:0x1ef2
+0xbeep(invalid)
+-------------
+byte b=10;
+byte b=130;//possible loss of precision
+byte b=10.5;//possible loss of precision
+byte b="hello";//incompatible types
+-------------------------------------------------
+floating point constants:
+-------------------------------------------------
+default:every floating point is double...
+float:4
+double:8
+ex:suffix with F or f
+float f=10.5f;
+double f=10.5;
+float d=10.3;//PLP error
+----cannot represent in octal nd hexa decimal form....
+double d=010.25;//0 is not taken..
+o/p:10.25
+double f=0X10.25;//ERROR:Malformed floating point
+double d=0X10;//16.0
+--------------------------------------
+boolean constants
+--------------------------------------
+true,false
+boolean b=true;//valid
+boolean g=True;/cannnot find symbol
+boolean g=0;//incompatible types
+boolean b="true";//incompatible types
+----
+character literals
+--------------------
+
+character can be represented in integral upto 65535
+char p='a';
+char y=97;
+char ch=65536;//PLP
+char ch="hello";//incompatible
+char ch='ab';inclosed character literal
+-->escape seqeunces are also ued
+char ch='\n';//valid
+char ch='/n';//invalid escape sequence character
+----------------------------------------------------------------------
+operators
+-------------------------------------------------
+13 operators
+------------------------
+++,--
+-------------------------
+byte b=10;
+b=b+1;//possible loss of precision
+b++;//11
+
+byte+integer returns byte
+----------------------------------------------------------------------------------------------------------------------
+max(int,type of a,type of b)--->formula
+------------------------------------------------------------------------------------------------------------------------
+byte+byte=int
+byte+char =int
+byte+double=double;
+s.o.p('a'+10);//97
+s.o.p('a'+'b');/97+98
+--------------------
+s.o.p(++4)//invalid
+----------------------------------------------------
+s.o.p(++(++x));//nesting of ++ ,-- is not posible.,,
+++,-- not applicable for boolean
+-------------------------------------------------------------------------------------------------
+Infinity::
+no way to represent
+s.o.p(10/0);//arithmetic exception
+s.o.p(-10.5/0);//-Infinity
+------------------------------------------------------------------------------------------------------
+NaN:----
+--------------------------------------------------------------------------------------------------------
+s.o.p(0/0);//arithmetic exception
+s.o.p(0.0/0.0);//NaN
+------------------------------------------------------------------------------------------------------
+Relational operators-----
+-----------------------------------------------------------------------------------------------------
+<,><=,>=
+for comparing all primitive objects except boolean type
+----------
+s.o.p(10>1);//valid
+s.o.p(true>false);//invalid;
+cannot compare 2 objects using relational operator 
+ex:
+String f=new String("hello");
