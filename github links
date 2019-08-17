@@ -1,0 +1,73 @@
+https://github.com/java2786/genc-jul19/tree/master/Day2_Bootstrap
+https://www.google.com/search?rlz=1C1GCEU_enIN856IN856&ei=jzhBXcSzHJT9rQGgnZ64DQ&q=mackaroo&oq=mackaroo&gs_l=psy-ab.1.0.0i67j0i10l9.3171.3283..14385...0.0..0.2863.5106.9-2......0....1..gws-wiz.wA-bvLDqd0g
+https://www.codementor.io/adekunleoyaniyi/interpolation-vs-property-binding-in-angular2-eu1tzbyn4
+https://dzone.com/articles/bindings-in-angular
+https://jsonplaceholder.typicode.com/posts
+https://github.com/vskreddy652
+https://github.com/puneetvashisht/mwpune
+-----------------------------------------------------------------------------
+
+ ----fname,lNAME------------
+ System.out.println(firstName(name));
+   public static boolean firstName(String str) 
+    { 
+        return ((str != null) 
+                && (!str.equals("")) 
+                && (str.matches("^[a-zA-Z]*$"))); 
+    }
+	------------------------------------
+	-----------------uSER NAME----------------
+	
+	 System.out.println(userName(name));
+	 public static boolean userName(String str) 
+    { 
+	boolean b=false;int c=0;
+	
+      if ( Character.isDigit(str.charAt(0)) )
+		{
+			System.out.println("Username must not start with number");
+			b=true;
+
+		}
+		else{
+		c=c+1;
+		}
+		
+			
+		if(str.length()>=8 && str.length()<= 12)
+		{	c=c+1;
+			b=true;
+		}	
+		else{
+				System.out.println("Length of Username should be between 8 to 12");
+				
+				
+				}
+				
+				if((str != null) 
+                && (!str.equals("")) 
+                && (str.matches("^[a-zA-Z0-9]+$"))){
+					c=c+1;
+					b=true;
+			}	
+		else{
+				System.out.println("Username should allow mix of alphabets and number only");
+					b=false;
+			}
+	
+       
+	  if(c==3){
+	      b=true;
+	}
+	else{
+	      b=false;
+	}
+return b;
+ }
+-----------------------------------email validation-------------
+System.out.println("Is the above E-mail ID valid? " + isValid(name));
+public  static boolean isValid(String email) {
+      String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+      return email.matches(regex);
+   } 
+   ----------------------
