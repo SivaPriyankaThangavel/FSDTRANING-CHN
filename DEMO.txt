@@ -1,0 +1,57 @@
+ ----fname,lNAME------------
+ System.out.println(firstName(name));
+   public static boolean firstName(String str) 
+    { 
+        return ((str != null) 
+                && (!str.equals("")) 
+                && (str.matches("^[a-zA-Z]*$"))); 
+    }
+	------------------------------------
+	-----------------uSER NAME----------------
+	
+	 System.out.println(userName(name));
+	 public static boolean userName(String str) 
+    { 
+	boolean b=false;int c=0;
+	
+      if ( Character.isDigit(str.charAt(0)) )
+		{
+			System.out.println("Username must not start with number");
+			b=true;
+
+		}
+		else{
+		c=c+1;
+		}
+		
+			
+		if(str.length()>=8 && str.length()<= 12)
+		{	c=c+1;
+			b=true;
+		}	
+		else{
+				System.out.println("Length of Username should be between 8 to 12");
+				
+				
+				}
+				
+				if((str != null) 
+                && (!str.equals("")) 
+                && (str.matches("^[a-zA-Z0-9]+$"))){
+					c=c+1;
+					b=true;
+			}	
+		else{
+				System.out.println("Username should allow mix of alphabets and number only");
+					b=false;
+			}
+	
+       
+	  if(c==3){
+	      b=true;
+	}
+	else{
+	      b=false;
+	}
+return b;
+ }
